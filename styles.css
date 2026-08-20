@@ -16,6 +16,11 @@ a { color: inherit; text-decoration: none; }
 .brand { display: grid; width: 42px; height: 42px; place-items: center; color: var(--paper); background: var(--ink); font-weight: 700; letter-spacing: -.05em; }
 nav { display: flex; gap: 28px; font: 500 12px 'DM Mono', monospace; text-transform: uppercase; }
 nav a:hover, .email:hover { text-decoration: underline; text-underline-offset: 5px; }
+.tabs { gap: 4px; padding: 4px; border: 1px solid var(--line); background: rgba(255, 255, 255, .22); }
+.tab { padding: 10px 12px; white-space: nowrap; }
+.tab:hover { text-decoration: none; background: rgba(255, 255, 255, .45); }
+.tab:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.tab.is-active { color: var(--paper); background: var(--ink); }
 .hero { min-height: 76vh; max-width: 1180px; margin: auto; padding: 13vh 32px 100px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .page-main { max-width: 1180px; margin: auto; }
 .page-intro { min-height: 62vh; padding: 12vh 32px 100px; display: flex; flex-direction: column; justify-content: center; }
@@ -67,7 +72,8 @@ em { color: #768c26; font-family: Georgia, serif; font-weight: 400; letter-spaci
 footer { border-top: 1px solid var(--line); padding-top: 24px; padding-bottom: 24px; }
 @media (max-width: 700px) {
   .site-header, footer { padding-left: 20px; padding-right: 20px; }
-  nav { gap: 12px; font-size: 10px; }
+  .tabs { max-width: calc(100vw - 82px); overflow-x: auto; gap: 0; }
+  .tab { padding: 9px 10px; font-size: 10px; }
   .hero, .section, .page-intro { padding-left: 20px; padding-right: 20px; }
   .hero { min-height: 70vh; padding-top: 80px; }
   .intro { font-size: 16px; }
