@@ -20,6 +20,8 @@ nav a:hover, .email:hover { text-decoration: underline; text-underline-offset: 5
 .tab { padding: 10px 12px; white-space: nowrap; }
 .tab:hover { text-decoration: none; background: rgba(255, 255, 255, .45); }
 .tab:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.home-tab { color: var(--ink); background: var(--lime); font-weight: 600; }
+.home-tab:hover { background: #d8f184; }
 .tab.is-active { color: var(--paper); background: var(--ink); }
 .hero { min-height: 76vh; max-width: 1180px; margin: auto; padding: 13vh 32px 100px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .page-main { max-width: 1180px; margin: auto; }
